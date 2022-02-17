@@ -1,0 +1,104 @@
+html {
+   
+    background: radial-gradient(circle,#CB93CE 4%,#9CA8DE 66%, #AA80A5 98%);
+    background-size: 300% 300%;
+    animation: change 40s ease-in-out infinite;
+}
+
+@font-face {
+    font-family: 'Hofmann-TRIAL';
+    src: url('../fonts/HofmannTRIALRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.title {
+    font-family: 'Hofmann-TRIAL';
+    font-size: 9em;
+    background: linear-gradient( 
+        to right, #ff0162, #ff0808, #eedd44,
+         #27cdff, #eedd44); 
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text; 
+        max-width: 100%;
+}
+
+h2 {
+font-family: 'helveticaneue';
+text-align: center;
+font-size: 1em;
+margin: 2em;
+overflow: hidden;
+background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 230, 0), rgb(255, 0, 0));
+background-repeat: no-repeat;
+background-size: 80%;
+animation: animate 4s linear infinite;
+-webkit-background-clip: text;
+-webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hofmann';
+    flex-direction: column;
+}
+
+#demo {
+    font-family: 'hofmann-TRIAL';
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 3em;
+}
+
+/* Text Glow */ 
+.confirm_selection {
+    animation: glow .5s infinite alternate;
+}
+
+
+
+/* animation */
+@keyframes change {
+    0% {
+    background-position: 0 50%;
+  }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+  
+      } }
+
+/*glow*/
+    
+@keyframes glow {
+        to {
+            text-shadow: 0 0 6em #f6ff00;
+        }
+    }
+
+
+    @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }}
+
+
+        @media only screen and (max-width: 50em) {
+            html {
+                max-width: 100%;
+            }
+
+            .title {
+                font-size: 4em;
+                margin-top: 3em;
+            }
