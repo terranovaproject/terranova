@@ -103,7 +103,7 @@ img {
         }}
 
 
-        @media only screen and (max-width: 50em) {
+        @media only screen and (max-width: 1170px) {
             html {
                 max-width: 100%;
             }
@@ -115,6 +115,10 @@ img {
 
           #demo {
               font-size: 2em;
+          }
+
+          img {
+              width: 400px;
           }
 
         }
