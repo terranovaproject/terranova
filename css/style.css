@@ -126,6 +126,10 @@ img {
                 margin-top: 1em;
             } 
 
+            h2 {
+                font-size: .4em;
+            }
+
           #demo {
               font-size: 2em;
           }
