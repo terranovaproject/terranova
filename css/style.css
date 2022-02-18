@@ -1,13 +1,13 @@
 html {
    
-    background: radial-gradient(circle,#CB93CE 4%,#9CA8DE 66%, #AA80A5 98%);
+    background: radial-gradient(circle,#121f42 4%,#1b2244 66%, #2a396b 98%);
     background-size: 300% 300%;
     animation: change 40s ease-in-out infinite;
 }
 
 @font-face {
-    font-family: 'Hofmann-TRIAL';
-    src: url('../fonts/HofmannTRIALRegular.ttf') format('truetype');
+    font-family: 'Wired';
+    src: url('../fonts/Wired-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -15,11 +15,11 @@ html {
 
 
 .title {
-    font-family: 'Hofmann-TRIAL';
+    font-family: 'Wired';
     font-size: 9em;
     background: linear-gradient( 
-        to right, #ff0162, #ff0808, #eedd44,
-         #27cdff, #eedd44); 
+        to right, #a9aed8, #83a4fe, #cdd0f3,
+         #55a5ff, #ffffff); 
         -webkit-text-fill-color: transparent; 
         -webkit-background-clip: text; 
         max-width: 100%;
@@ -31,7 +31,7 @@ text-align: center;
 font-size: 1em;
 margin: 2em;
 overflow: hidden;
-background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 230, 0), rgb(255, 0, 0));
+background: linear-gradient(90deg, rgb(255, 255, 255), rgb(80, 112, 200), rgb(34, 104, 255));
 background-repeat: no-repeat;
 background-size: 80%;
 animation: animate 4s linear infinite;
@@ -48,11 +48,20 @@ animation: animate 4s linear infinite;
 }
 
 #demo {
-    font-family: 'hofmann-TRIAL';
+    font-family: 'wired';
     display: flex;
     justify-content: center;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 3em;
+}
+
+.image {
+   -webkit-filter: invert(100%);
+    filter: invert(100%);
+    display: flex;
+    justify-content: center;
+    width:"800px";
+    height:"400px";
 }
 
 /* Text Glow */ 
@@ -79,7 +88,7 @@ animation: animate 4s linear infinite;
     
 @keyframes glow {
         to {
-            text-shadow: 0 0 6em #f6ff00;
+            text-shadow: 0 0 6em #ffffff;
         }
     }
 
@@ -99,6 +108,19 @@ animation: animate 4s linear infinite;
             }
 
             .title {
-                font-size: 4em;
-                margin-top: 3em;
-            }
+                font-size: 3em;
+                margin-top: 1em;
+            } }
+
+          #demo {
+              font-size: 2em;
+          }
+
+          .image {
+              width: 50px;
+              height: 200px;
+              justify-content: center;
+              align-self: center;
+              margin-top: 8em;
+              margin-left: 10.2em;
+          }
