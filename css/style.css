@@ -69,6 +69,7 @@ animation: animate 4s linear infinite;
     filter: invert(100%);
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 img {
@@ -79,7 +80,10 @@ img {
     animation: glow .5s infinite alternate;
 }
 
-
+.head {
+    width: 2px;
+    height:20px;
+}
 
 /* animation */
 @keyframes change {
